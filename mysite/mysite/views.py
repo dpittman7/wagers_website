@@ -12,7 +12,7 @@ def leaderboard(request):
     html = t.render({'leaderboard_list': leaderboard})
     return HttpResponse(html)
 
-def home(request):
-    t = get_template('home.html')
+def throneroom(request):
+    t = get_template('throneroom.html')
     html = t.render()
     return HttpResponse(html)

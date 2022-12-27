@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import re_path, include
-from mysite.views import home, leaderboard
+from mysite.views import throneroom, leaderboard
 
 urlpatterns = [
     re_path('^admin/', admin.site.urls),
     re_path('^leaderboard/$',leaderboard),
-    re_path('^home/$',home),
+    re_path('^throneroom/$',throneroom),
 ]

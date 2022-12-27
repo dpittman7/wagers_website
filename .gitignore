@@ -130,6 +130,9 @@ venv.bak/
 web_venv/
 node_modules/
 
+#Dev static files
+staticfiles/
+
 # Spyder project settings
 .spyderproject
 .spyproject

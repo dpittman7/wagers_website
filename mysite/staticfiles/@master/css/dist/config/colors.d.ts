@@ -1,0 +1,25 @@
+declare const colors: {
+    slate: any;
+    gray: any;
+    brown: any;
+    orange: any;
+    gold: any;
+    yellow: any;
+    grass: any;
+    green: any;
+    beryl: any;
+    teal: any;
+    cyan: any;
+    sky: any;
+    blue: any;
+    indigo: any;
+    violet: any;
+    purple: any;
+    fuchsia: any;
+    pink: any;
+    crimson: any;
+    red: any;
+    black: string;
+    white: string;
+};
+export default colors;

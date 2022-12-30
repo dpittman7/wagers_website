@@ -13,6 +13,7 @@ animate();
 
 window.addEventListener('pointermove', onPointerMove);
 window.addEventListener('dblclick', onPointerClick);
+window.addEventListener('touchstart', onPointerClick);
 console.log(pointer);
 
 function init() {
@@ -31,9 +32,9 @@ function init() {
 	const pmremGenerator = new THREE.PMREMGenerator(renderer);
 	//scene.environment = pmremGenerator.fromScene(new RoomEnvironment(), 0.04).texture;
 
-	camera.position.x = 2.68;
-	camera.position.y = 4.55;
-	camera.position.z = 3.80;
+	camera.position.x = 10.68;
+	camera.position.y = 20.55;
+	camera.position.z = 0.80;
 
 	camera.rotateX(13.9);
 	camera.rotateY(.08);
@@ -89,7 +90,7 @@ var bezier = new THREE.CubicBezierCurve3();
 var beziertransition = false;
 var pathprogress = 0;
 var offset = .005;
-var bannerview = new THREE.Vector3(2.61, 3.63, -2.8);
+var bannerview = new THREE.Vector3(10.68, 20.55, 0.80);
 function animate() {
 
 
@@ -153,7 +154,7 @@ const objArray = ["leaderboard", "videoscreen"];
 
 //applies only to banner object (id=74), need to abstactify to allow other objs
 function onPointerClick(event) {
-	console.log('double click event initated!');
+	console.log('double click/touchend event initated!');
 	var interactiveObj = new THREE.Object3D();
 	for (let i = 0; i < objArray.length; i++) {
 		interactiveObj = scene.getObjectByName(objArray[i]);
@@ -212,7 +213,7 @@ function bezierZoomIn() {
 
 function leaderboardRedirect() {
 
-	var url = "http://127.0.0.1:8000/leaderboard/"
+	var url = "http://ultimagaming.co/leaderboard/"
 	window.location.href = url;
 
 }

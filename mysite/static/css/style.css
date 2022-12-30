@@ -1,56 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
 
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.1rem 5rem;
-    background: linear-gradient(180deg, #6fb4fd 0%, #5caafc 100%);
-}
-
-.brand a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #fff;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-}
-
-li {
-    list-style-type: none;
-    margin-left: 3rem;
-}
-
-    li > a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 0.9rem;
-        font-weight: 500;
+@keyframes gradient-animation {
+    0% {
+        background-position: 25% 50%;
     }
 
-
-    li::after {
-        content: '';
-        width: 0rem;
-        height: 0.15rem;
-        background-color: #fff;
-        display: block;
-        border-radius: 0.2rem;
-        margin: 0.2rem auto 0 auto;
-        transition: all 0.3s ease-in-out;
+    50% {
+        background-position: 100% 100%;
     }
 
-    li:hover::after {
-        width: 2rem;
+    100% {
+        background-position: 50% 50%;
     }
+}
+
+@keyframes background {
+    from {
+        left: 0px;
+        top: 0px;
+        background: linear-gradient(180deg,#121212,#454545);
+        border-color: rgb(83, 140, 238);
+    }
+
+    to {
+        left: 150px;
+        top: 50px;
+        background: linear-gradient(180deg,#023030,#000000);
+        border-color: rgb(235, 95, 99);
+    }
+}
+
+@keyframes slide-text {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -5rem;
+    }
+
+    75% {
+        top: -9rem;
+    }
+
+    100% {
+        top: -15rem;
+    }
+    
+}
+
+:root {
+    --font-family: JetBrains Mono, monospace;
+}

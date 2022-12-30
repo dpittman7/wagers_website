@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ultima Gaming</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.master.co/css"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<nav class="display:block fixed top:0 w:full z:1040 bb:1|solid|transparent text:20@<=lg jc:center aligh-items:center">
+    <a class="float:left" href="/">
+        <img class="w:80px h:auto" src="https://imgur.com/G3c0e8w.png">
+    </a>
+
+    <a class="text-decoration:none text:center p:13px|16px font:fade-60 font:1rem font:semibold background-color:gray-2:hover" href="/leaderboard">Leaderboard</a>
+    <a class="text-decoration:none text:center p:13px|16px font:fade-60 font:1rem font:semibold background-color:gray-2:hover" href="/throneroom">ThroneRoom</a>
+    <a class="text-decoration:none text:center p:13px|16px font:fade-60 font:1rem font:semibold background-color:gray-2:hover" href="https://goerli.etherscan.io/address/0x2fF8dAd2Dc2bDB6350f6bE7374efDeCc7caA69A9#code">Governing ETH Contract</a>
+    <!-- <li class="list-style-type:none ml:1.2rem"><a class="text-decoration:none font:crimson-60 font:1rem font:semibold" href="#">homepage(soon)</a></li>  -->
+
+</nav>
+<body class="bg:linear-gradient(300deg,#023030,#000000) background-size:250%|250% @gradient-animation|ease-in|7s|infinite|alternate mt:60px font-family:$(font-family)">
+
+
+
+    <div class="text:center">
+        <h1 class="text:6vw font:crimson-60">REIMAGINED</h1>
+        <div class="h:4.125rem line-height:4rem position:relative overflow:hidden w:100% display:flex jc:center align-items:center">
+            <span class="text:3vw position:absolute jc:center align-items:center text:center @slide-text|ease-in|6s|infinite|alternate">
+                <br />Matchmaking<br /><br />
+                Competitive Community <br /><br />
+                Decentralized Ranking<br />
+            </span>
+        </div>
+        <p class="font:fade-60">
+            Ultima is a Discord bot geared towards facilitating grassroot eSport gaming communities
+        </p>
+    </div>
+
+
+    <div class="">
+        <h1 class="font:fade-60 text:center text:3vw"> How It Works? </h1>
+        <h2 class="font:fade-60 text:center text:2vw"> Getting Started </h2>
+        <p> Ultima bot acts as a middleware to call functions to the smart contract facilitating the exchange.</p>
+        <p>
+            First, create a cryptowallet and initalize yourself by using the slash command /initialize.
+            An account will be created on the smart contract and you will also appear on the server leaderboard once complete.
+        </p>
+        <p>
+            Every account has a total balance, a elo rating, and various stats. Once initializaed, you are able to /challenge an opponent in the server.
+            If challenge is accepted, both players will agree to a game count to play 'best of' then prompted to play.
+        </p>
+        <p class="font:bold"> THE COMFIRMATION OF GAMES ARE SELF DETERMINED. PLAYERS claims win and loser must confirm said win. Disagreements will be flagged and investigated. Any foul play will result in a immediate ban and funds in account will be forfitted. </p>
+        <p> Once complete, the challenge results will be posted and the users rank and stats will be updated on the smart contract and website leaderboard.</p>
+
+        <h2 class="font:fade-60 text:center text:2vw"> ELO Ranking and Ethereum Wagers </h2>
+        <p>
+            The smart contract is meant to act as a way to decentralize ranking across various communities. In laymens terms, using the ELO rating system popularized from chess,
+            one would be able to know their skill level seperate from their group. High rank players are incentivised to branch out and play against players near their skill in order to increase their rank.
+        </p>
+        <p>
+            One can only do a wager match with individuals near their ELO ranking. The higher rank one is, the higher the allowed wager limit those players will be able to initiate.
+            To be able to wager, first deposit ethereum to your account directly to the contract by calling the deposit function on etherscan.
+            <p class="font:bold"> The current contract is currently deployed on the GOERLI ethereum testnet. We're playing with play money, will only launch on the mainnet once it is ready.
+                                   Visit a goerli faucet to get currency deposited into your wallet for free to just try it out. Challenge yourself and see how much play money you can earn by the end of the season! 
+            </p>
+            Once deposited, one will be able to wager an opponent by calling /wager. Once accepted, same procedure as /challenge, except crypto is on the line!
+            5% is taken from wager earnings to supplement gas fees to handle contract transactions.
+            Whenever one is ready, one can withdraw the earnings in their account by calling the withdraw() command directly on the smartcontact on etherscan.
+        </p>
+
+        <h2 class="font:fade-60 text:center text:2vw"> The ThroneRoom & Season Play </h2>
+        <p>
+            Where do you stand in glory? The ThroneRoom is a virtual space to memorialize key events that happen in the server. 
+            As the community grows, the throne room will grow. The victors of the server will be the one who will hold the ability to request what items/segements to be added.
+        </p>
+
+    </div>
+
+    <div class="">
+        <h1 class="font:fade-60 text:center text:3vw"> ROADMAP </h1>
+        <ul>
+            <li> Create a 24/7 livestream arena w/ computer vision capabilities on twitch to facilitate/validate users in wager matches. </li>
+            <li> Rewrite bot to allow functionality/matchmaking on personal servers. </li>
+            <li> Launch the project on the mainnet to be able to wager actual ethereum.</li>
+            <li> Update website UI and functionality. </li>
+            <li> Community NFT's' awarded for win streaks and season play. </li>
+
+        </ul>
+    </div>
+
+
+
+
+
+</body>
+</html>

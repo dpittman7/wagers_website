@@ -133,6 +133,9 @@ node_modules/
 #Dev static files
 staticfiles/
 
+#ignore settings.py
+settings.py
+
 # Spyder project settings
 .spyderproject
 .spyproject

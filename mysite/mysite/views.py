@@ -16,3 +16,8 @@ def throneroom(request):
     t = get_template('throneroom.html')
     html = t.render()
     return HttpResponse(html)
+
+def home(request):
+    t = get_template('home.html')
+    html = t.render()
+    return HttpResponse(html)

@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ultimate Page</title>
+    <title>Ultima Gaming</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.master.co/css"></script>
@@ -42,36 +42,36 @@
 
 
 
-    <div class="grid-rows:1">
+    <div class="grid-cols:2@>=lg grid-cols:1 p:13px|16px@>md gap:20 ac:normal">
         {% for user in leaderboard_list %}
-        <div class="bg:gray-22@dark bg:gray-22 display:flex flex:row flex:col@<=sm ac:stretch m:auto w:100%">
+        <div class="grid-cols:2 background-blend-mode:soft-light display:flex flex:row m:auto w:100% gap:10|10@>=md gap:10 grid-auto-flow:dense">
 
 
-            <div class="grid-row-span:2">
-                <img class="obj:center square w:100% w:144@xs" src="{{user.profileurl}}" loading="lazy" />
-                <div class="font:white font:fade-30@light text:36 text:center font:bold place-content:center ">{{user.username}}</div>
-            </div>
 
-            <div class="display:flex flex:row float:right m:auto w:100%@>=lg ac:center jc:center">
-                <div class="d:flex grid-cols:4 box:content gap:50 ac:space-between@>=lg jc:space-between@>=lg">
-                    <div class="font:crimson-60 font:fade text:40 text:20@<=md m:auto ">
+            <img class="obj:center square w:100% w:144@<md" src="{{user.profileurl}}" loading="lazy" />
+
+            
+                <div class="d:flex grid-cols:4 grid-cols:2@<md gap-x:25@<=md gap-x:10 gap-y:5@<=md w:100%">
+                    <div class="font:crimson-60 font:fade m:auto font:4vw font:2vw@>=md">
                         <div class="h:50% m:auto align:center">Wins</div>
-                        <div class="h:50%">{{user.wins}}</div>
+                        <div class="h:50% align:center">{{user.wins}}</div>
                     </div>
-                    <div class="font:crimson-60 font:fade text:40 text:20@<=md m:auto ">
+                    <div class="font:crimson-60 font:fade m:auto font:4vw font:2vw@>=md">
                         <div class="h:50% w:100% m:auto display:inline-block align:center">Loses</div>
-                        <div class="h:50%">{{user.loses}}</div>
+                        <div class="h:50% align:center">{{user.loses}}</div>
                     </div>
-                    <div class="font:crimson-60 font:fade text:40 text:20@<=md m:auto ">
+                    <div class="font:crimson-60 font:fade m:auto font:4vw font:2vw@>=md">
                         <div class="h:50% w:100% m:auto display:inline-block align:center">Total</div>
-                        <div class="h:50%">{{user.total}}</div>
+                        <div class="h:50% align:center">{{user.total}}</div>
                     </div>
-                    <div class="font:crimson-60 font:fade text:40 text:20@<=md m:auto ">
+                    <div class="font:crimson-60 font:fade m:auto font:4vw font:2vw@>=md">
                         <div class="h:50% w:100% m:auto display:inline-block align:center">Ranking</div>
-                        <div class="h:50% m:auto">{{user.ranking}}</div>
+                        <div class="h:50% m:auto align:center">{{user.ranking}}</div>
                     </div>
                 </div>
-            </div>
+            
+
+            <div class="place-item font:white text:36 text:1vm@<md text:center font:bold place-content:center ">{{user.username}}</div>
 
 
         </div>

@@ -130,8 +130,9 @@ venv.bak/
 web_venv/
 node_modules/
 
-#Dev static files
+#Dev static files/settings
 staticfiles/
+settings.py
 
 #ignore settings.py
 settings.py
@@ -166,3 +167,7 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+/.vs/django/FileContentIndex
+/.vs/django/v17
+*.sqlite
+/.vs/VSWorkspaceState.json
